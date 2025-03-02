@@ -2,4 +2,5 @@ if SHIELD_PHILLY
 
 config ZMK_KEYBOARD_NAME
     default "philly"
+    
 endif
