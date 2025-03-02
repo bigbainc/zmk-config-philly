@@ -2,8 +2,9 @@
 
 / {
     chosen {
-        zmk, kscan = &default_kscan;
-        zmk, matrix_transform = &default_transform;
+        zmk,physical-layout = &physical_layout0;
+        zmk,defualt-transform = &keymap_transform0;
+        zmk,kscan = &kscan0;
     };
 
     kscan0: kscan0 {
@@ -33,5 +34,12 @@
             RC(1,0) RC(1,1) RC(1,2)
             RC(2,0) RC(2,1) RC(2,2)
         >;
+    };
+
+    physical_layout0: physical_layout_0 { 
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = <&kscan0>; 
+        transform = <&default_transform>;
     };
 };
