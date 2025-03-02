@@ -3,7 +3,7 @@
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
-        zmk,defualt-transform = &keymap_transform0;
+        zmk,defualt-transform = &default_transform;
         zmk,kscan = &kscan0;
     };
 
